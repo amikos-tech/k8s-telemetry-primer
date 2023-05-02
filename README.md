@@ -28,6 +28,22 @@ The above will create a kind cluster named `telemetry` and deploy the following:
 - Deploy the application
 - Setup port forwarding for Jaeger UI (port 16686) and the application (port 8000)
 
+Once the above completes you should be able to access the application at http://localhost:8000 and the Jaeger UI at http://localhost:16686
+
+> Note: To see the application traces you need to access the application point so that traffic is generated.
+
+To delete the cluster run:
+
+```bash
+kind delete cluster --name telemetry
+```
+
+or the provided cleanup script (from project root):
+
+```bash
+bash cleanup.sh
+```
+
 ## Observability Notes
 
 ### Python
