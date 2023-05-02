@@ -1,0 +1,4 @@
+fastapi
+uvicorn
+opentelemetry-distro
+requests
